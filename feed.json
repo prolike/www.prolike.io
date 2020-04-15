@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Prolike",
+    "home_page_url": "https://www.prolike.io/",
+    "feed_url": "https://www.prolike.io/feed.json",
+    "description": "We run a frank and transparent business, teaching the Yipees the ins and outs of being a professional consultant, freelancer, innovator or entrepreneur",
+    "icon": "https://www.prolike.io/apple-touch-icon.png",
+    "favicon": "https://www.prolike.io/favicon.ico",
+    "expired": false,
+    
+    "author": "Prolike",
+    
+"items": [
+    
+    ]
+}

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!-->
+
+<html lang="en">
+
+<!--<![endif]-->
+
+<head>
+
+  <!-- Google Tag Manager -->
+
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NSLZT72');
+  </script>
+
+  <!-- Jekyll invironment variable -->
+
+  
+
+
+  <!-- Meta -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta itemprop="description" name="description" content="Let's talk about why your website should run on JAM rather than LAMP" />
+  <meta name="author" content="Prolike">
+  <meta name="keywords" content="Continuous Delivery, Agile, Docker">
+  <link data-proofer-ignore rel="canonical" href="https://www.prolike.io/stories/we-re-jammin/">
+
+  <!-- Open Graph tags -->
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="We're jammin'">
+  <meta data-proofer-ignore property="og:url" content="https://www.prolike.io/stories/we-re-jammin/">
+  <meta data-proofer-ignore property="og:image" content="https://www.prolike.io/images/anything/bobmarley.jpg" />
+  <meta property="og:site_name" content="Prolike">
+  <meta property="article:publisher" content="https://www.linkedin.com/company/prolike/" />
+  <meta property="article:author" content="https://www.linkedin.com/company/prolike/" />
+  <meta property="article:published_time" content="2019-11-27 00:00:00 +0100" />
+  <meta property="og:description" content="Let's talk about why your website should run on JAM rather than LAMP">
+
+  <!-- Touch icons -->
+
+  <link data-proofer-ignore rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon-180x180.png" />
+
+  <!-- Twitter Card tags -->
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta data-proofer-ignore name="twitter:image" content="https://www.prolike.io/images/anything/bobmarley.jpg">
+  <meta data-proofer-ignore name="twitter:title" content="We're jammin'">
+  <meta data-proofer-ignore name="twitter:description" content="Let's talk about why your website should run on JAM rather than LAMP">
+
+  <!-- Page Title -->
+
+  <title>
+    
+    We're jammin' - Stories - Prolike
+    
+  </title>
+
+
+  <!-- Custom fonts for this template -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/dee0mal.css">
+
+  <!-- Favicon -->
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/icons/favicon.ico">
+
+  <!-- Custom styles for this template -->
+
+  <link href="/css/main.css" rel="stylesheet">
+
+  <!-- Fullpage.js scripts -->
+
+  <link rel="stylesheet" href="/css/fullpage.css">
+
+  <!-- Feed -->
+
+  <link rel="alternate" title="Prolike" type="application/json" href="/feed.json" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145588327-1"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145588327-1');
+  </script>
+
+  <!-- Plugin JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<script src="/js/firebaseHandler.js"></script>
+
+<!-- Firebase plugins -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+<script>
+// TODO: Replace the following with your app's Firebase project configuration
+var firebaseConfig = {
+    "apiKey": "AIzaSyAhQJHhUI7Plc7Y_LFXeX8nrjJsFhKlHcw",
+    "projectId": "dillydally-stage",
+    "authDomain": "dillydally-stage.firebaseapp.com",
+    "apiURL": "https://europe-west1-dillydally-stage.cloudfunctions.net/api/",
+    "databaseURL": "https://dillydally-stage.firebaseio.com",
+    "databaseLocation": "eur3 (europe-west)"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+</script>
+
+
+<body id="page-top">
+  
+  <span style="display:none" class="env">prod</span>
+  
+  <!-- Google Tag Manager (noscript) -->
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSLZT72" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- End Google Tag Manager (noscript) -->
+  <nav>
+  <a class="menu-btn" href="/"><img src="/images/logos/prolike-logo.png" alt="Prolike website logo"></a>
+
+  <div class="d-none d-md-block toggler dmenu">
+    <a class="navigation-link" href="/" data-proofer-ignore><p>Home</p></a>
+    
+      
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+          <a href="/gigs/" data-proofer-ignore><p>Gigs</p></a>
+      
+    
+        
+          <a href="/services/" data-proofer-ignore><p>Services</p></a>
+      
+    
+        
+          <a href="/events/" data-proofer-ignore><p>Events</p></a>
+      
+    
+        
+    
+        
+    
+        
+          <a href="/stories/" data-proofer-ignore><p>Stories</p></a>
+      
+    
+        
+          <a href="/contact/" data-proofer-ignore><p>Contact</p></a>
+      
+    
+        
+    
+        
+    
+    
+  </div>
+
+  <div class="d-md-none">
+    <div class="toggler mr-auto"><i class="fas fa-bars d-md-none"></i></div>
+    <div class="menu">
+      <div class="row justify-content-center align-content-center" style="z-index: 10;">
+        <ul>
+          <li><a class="navigation-link" href="/" data-proofer-ignore>
+              <h1>Home</h1>
+            </a></li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li>
+            <h1><a href="/gigs/" data-proofer-ignore>Gigs</a></h1>
+          </li>
+          
+          
+          
+          <li>
+            <h1><a href="/services/" data-proofer-ignore>Services</a></h1>
+          </li>
+          
+          
+          
+          <li>
+            <h1><a href="/events/" data-proofer-ignore>Events</a></h1>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li>
+            <h1><a href="/stories/" data-proofer-ignore>Stories</a></h1>
+          </li>
+          
+          
+          
+          <li>
+            <h1><a href="/contact/" data-proofer-ignore>Contact</a></h1>
+          </li>
+          
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="contact-bar">
+    <a href="tel:+45 20 87 25 30"><i class="fas fa-phone"></i>  +45 20 87 25 30</a>
+    <a href="mailto:hey@prolike.io"><i class="far fa-envelope"></i> hey@prolike.io</a>
+
+  </div>
+
+
+</nav>
+
+<script>
+  $(function () {
+    var box = $('.menu');
+    var button = $('.toggler');
+    button.on('click', function () {
+      box.toggleClass('active');
+    });
+  });
+</script>
+
+
+
+
+  <div class="article">
+    <div class="row">
+      <div class="col-12">
+        <span>
+          <p>27. November, 2019</p>
+          <h1>We're jammin'</h2>
+            <p>By <a href="https://github.com/lakruzz">Lars Kruse</a></p>
+        </span>
+        <div class="header-image"><img src="/images/anything/bobmarley.jpg" alt="We're jammin'"></div>
+        <h3 id="lets-get-technical">Let’s get technical</h3>
+
+<p class="kicker">Wordpress, Drupal, Joomla are all CMS that are running on <em>a LAMP stack</em> The technology saw the light 25 years ago, created to support an internet with at completely different set of charatistices than what we see now. Today’s modern stack is called <em>a JAM stack</em> and it’s different in every possibly thinkable way. Stay tuned to learn the difference between <em>LAMP</em> and <em>JAM</em> and then consider if you want to take a step into the future.</p>
+
+<blockquote>
+  <p><em>“We’re jammin’. I want to jam it with you, we’re jammin’ and I hope you like jammin’ too.”</em></p>
+</blockquote>
+
+<p><em>Quote: Bob Marley</em></p>
+
+<p>This blog is for you, who owns a website - or are about to get one - and who thinks that perhaps, the maintenance and development of it is a bit expensive, or error prone, or overly complex. The thing is, that most likely your website <em>stack<sup id="fnref:stack"><a href="#fn:stack" class="footnote">1</a></sup></em> is a thing of the past. You need to stay tuned here and lean the differences between a classical LAMP stack and and contemporary JAM stack. This learning might prove valuable to you. Enabling you to be strategic about your choices in the future.</p>
+
+<h4 id="--wait---hold-on-jam-lamp-you-lost-me-there-i-dont-know-what-any-of-them-means"><em>- “Wait - hold on! JAM, LAMP you lost me there, I don’t know what any of them means?”</em></h4>
+
+<p>Alright, so let’s look at it, as if you were comparing an electrical car to a conventional car with a classical combustion engine. They solve the same problem, to those who don’t care much you could even argue that even the solution to the problem is the same. Only when you look under the hood is it obvious that they are indeed <em>very</em> different. Some of you probably wonder if maybe combustion engines running on fossil fuel are a thing of the past and maybe electrical cars belong to the future?</p>
+
+<p>For the same reason, you need to know the difference between a LAMP stack and a static JAM stack.</p>
+
+<h3 id="a-lamp-stack-explained">A LAMP stack explained</h3>
+
+<p>LAMP is a contraction of the first letters of the names in one of the most popular tool stacks in IT history:</p>
+
+<ul>
+  <li><strong>Linux</strong> <em>Operating system</em></li>
+  <li><strong>Apache</strong> <em>web server</em></li>
+  <li><strong>MySql</strong> <em>Relational database</em></li>
+  <li><strong>PHP</strong> <em>Domain specific programming language, designed specifically for server side scripting of web sites</em></li>
+</ul>
+
+<p><img src="/images/anything/lamp-server.png" alt="Stage" title="Stage" class="img-fluid" /></p>
+
+<p>We owe this stack a lot. There’s almost nothing that you can not do on this stack. It’s like a Swiss army knife. I has been the pet stack since what seems to be <em>forever (roughly 1995)<sup id="fnref:forever"><a href="#fn:forever" class="footnote">2</a></sup></em>.</p>
+
+<p>Back in 1995 the internet was slow, servers were expensive, CPU power was limited and so was RAM, storage was expensive, browsers and frontend technology were immature, client-side scripting such as JavaScript was non-existent. The cloud as we know it did not exist. These were the challenges of the time that gave birth to the LAMP stack. And boy, did it kick ass! The LAMP stack was to the development of the internet, what the Ford T was to human transportation.</p>
+
+<p>All the tools in the LAMP stack are Open Source which means that it’s completely free of charge - at least when it comes to license cost. However, like a combustion engine, it turns out that with so many moving parts in the equation things get’s complicated quite fast. Syncing up, inter-compatibility, finding a server to host it on, upsizing when it runs out of resources etc. A LAMP stack has a relational database in the equation, which in many cases represents a system backdoor, so it’s always under attack from hackers. To stay afloat you need almost weekly updates. At the end of the day it may be free, but the cost of ownership is not necessarily cheep.</p>
+
+<h3 id="how-a-lamp-stack-works">How a LAMP stack works</h3>
+
+<p>From the end-user’s point of view, we’re presented with a “website”. We know websites as something that must be opened in a <em>web browser</em> which is a client tool, that understands the protocols of the internet, of which <code class="highlighter-rouge">HTML</code> (<em>Hyper Text Markup Language</em>) is the king of ‘em all. <code class="highlighter-rouge">HTML</code> is brought to the client using <code class="highlighter-rouge">HTTP</code> (<em>Hyper Text Transfer Protocol</em>). In modern world that protocol would be made secure (encrypted) and therefore it would most likely be <code class="highlighter-rouge">HTTPS</code> (an ‘S’ for ‘Secure’ is added to the end). If your website isn’t using <code class="highlighter-rouge">HTTPS</code> yet you should get it fixed <code class="highlighter-rouge">ASAP</code> (<em>As Soon As Possible</em> …not necessarily internet related).</p>
+
+<p>This <code class="highlighter-rouge">HTML</code> back and forth using <code class="highlighter-rouge">HTTP</code> and <code class="highlighter-rouge">HTTPS</code> is what <strong>Apache</strong> - the web server - is taking care of.</p>
+
+<p>But on a LAMP stack it’s most likely that the <code class="highlighter-rouge">HTML</code> page that your browser is displaying isn’t really there - yet. It’s more likely that your entry point on the server is actually a computer program  - written in <strong>PHP</strong>, that queries the database <strong>MySql</strong> for the content of the website and then merges it into the actual design template of the website, eventually generating the <code class="highlighter-rouge">HTML</code> that the the client browser requires.</p>
+
+<p>This approach was really clever - separating <em>what</em> from <em>how</em> has always been an important principle in programming - divide and concur; Let PHP take care of the design and let MySql take care of the content. But hey - it’s also quite complicated, so obviously we developed systems - content management systems (CMS) - that would make design more like playing with lego blocks and content nothing but text snippets back and forth - essentially hiding the PHP and MySql from the content managers.</p>
+
+<p>As the internet became more and more complex with demands for SEO (<em>Search Engine Optimization</em>), AJAX, Client side scripting. CSS (Cascading Style Sheets) - and obviously caches, because these LAMP stacks are really slow, measured by modern standards - and instead of generating all this <code class="highlighter-rouge">HTML</code> over and over again, CMS systems optimize it by building up caches.</p>
+
+<p>These CMS just grew and grew - they kept on offering internet technology as <em>clicky-clicky-pointy-pointy</em> grapical user interfaces, essentially hiding the technology underneath, unless you are one of the chosen few web developers that were supposed to understand the bits and parts of how the internet was essentially constructed.</p>
+
+<p>You may know these CMS as <strong>Wordpress</strong>, <strong>Drupal</strong>, <strong>Joomla</strong>, <strong>SiteCore</strong>, <strong>Concrete5</strong>, <strong>Umbraco</strong>, <strong>Shopify</strong> etc. The vast majority of these are based on a LAMP stack or a conceptually similar stack based on the holy trinity of:</p>
+
+<ul>
+  <li>a webserver</li>
+  <li>a server-side scripting language</li>
+  <li>a database</li>
+</ul>
+
+<h3 id="jam-stack-explained">JAM stack explained</h3>
+
+<p>JAM is also a contraction of the first letters of the tools - <em>and generic technologies</em> in the stack:</p>
+
+<ul>
+  <li><strong>JavaScript</strong> <em>also a domain specific language scripting, but this time designed specifically for client-side scripting of websites - only lated it expanded to include server-side scripting too</em></li>
+  <li><strong>APIs</strong> <em>Application Programmer Interfaces</em></li>
+  <li><strong>MarkDown</strong> <em>The World’s simplest MarkUp language - A drilled down version - hence the name</em></li>
+</ul>
+
+<p>It’s important to understand that LAMP vs JAM isn’t just a battle of tool stacks. The underlying technologies are as different as combustion engines and electrical engines. They solve the same problem, through completely different means.</p>
+
+<p>JAM stacks are also sometimes referred to as <em>static web sites</em>. Hereby indicating that the <code class="highlighter-rouge">HTML</code> on the web server is not generated on-thy-fly by a server-side programming language and a database in combination as it happens on a LAMP stack. Instead <em>all</em> the <code class="highlighter-rouge">HTML</code> pages are statically generated through a compile process and then pushed to the web server simply as static done-and-ready-to-use files.</p>
+
+<p>The content (<em>what</em>) is still separated from the design (<em>how</em>) but in this case it’s stored in <strong>MarkDown</strong> files. MarkDown is a <em>MarkUp</em> notation - like <code class="highlighter-rouge">HTML</code> itself, but where <code class="highlighter-rouge">HTML</code> is specifically designed to be read and parsed by machines, MarkDown is so simple, that anyone can learn it in 15 minutes, and it’s easy readable to humans. I’m writing this blog post now in MarkDown.</p>
+
+<p>There is no Database on the server, and there is no server-side scripting language available. All the dynamics of a website are handled by JavaScript on the client - the web browser - or through services on the internet integrated through APIs - most commonly <code class="highlighter-rouge">REST API</code> or <code class="highlighter-rouge">GraphQL API</code> communicating in <code class="highlighter-rouge">JSON</code> (<em>JavaScript Object Notation</em>).</p>
+
+<p>JAM stacks are not a result of the technology that was available in 1995. JAM stacks are calved from cloud technologies. JAM stacks are made with the purpose of being run as  <em>services</em>, not <em>servers</em>. They are <em>serverless</em>.</p>
+
+<p>It’s <em>Infrastructure as a Code</em>. Like leasing a car instead of owning it!</p>
+
+<h3 id="how-a-jam-stack-works">How a JAM stack works</h3>
+
+<p>In many ways the development processes are comparable. On both stacks we’re creating content and design through different processes, one is meant for content managers the other is meant for web designers. In both stack we’re trying to reuse as much as possible through means of plugin and extension technologies.</p>
+
+<p>But where a LAMP stack is designed to build the <code class="highlighter-rouge">HTML</code> on-the-fly when someone needs it, the JAM stack generates <em>all possible</em> <code class="highlighter-rouge">HTML</code> pages up front every time any of the content managers and or designers are done with a new snippet.</p>
+
+<p>When a web browser on the client requests some <code class="highlighter-rouge">HTML</code> it’s simply delivered instantly. The server is diminished to a simple <em>web service</em>; It can’t really do anything in terms of computation, semantical logic, database queries or the like. If something like that is needed, it’s expected to be available somewhere else on the internet, accessible to us through an API which communicates in <code class="highlighter-rouge">JSON</code> which is the de facto protocol JavaScript uses to stream data between systems. JavaScript runs on the client-side that means in the web browser.</p>
+
+<p>Say that we actually need to provide something like what we traditionally known as <em>server capacity</em>. Say like an actual database that allows us to store data about our users, products, objects, entities or if we want to pull data from other systems like book keeping, user authentication with Facebook, Google or what have you. If that is the case, then we will use either existing services, or create our own <em>services</em>[^create-you-own-service] - not <em>servers</em>.</p>
+
+<p>At the end of the day, we end up with the same Swiss army knife; There is nothing that this stack can not do for us, but we have magically removed the servers from the equation. We do no longer own any infrastructure. The infrastructure has been replaced with a snippet of computer program utilizing <em>services</em>.</p>
+
+<p>The infrastructure is programmable and serverless.</p>
+
+<p>There are quite many <a href="https://jamstack.org/examples/" target="_blank">different JAM stacks</a></p>
+
+<p><img src="/images/anything/JAM.png" alt="JAM" title="JAM" class="img-fluid" /></p>
+
+<h3 id="ok-so-why-do-i-care-if-its-one-or-the-other">OK, so why do I care if it’s one or the other?</h3>
+
+<p>First of all, there’s the total cost of ownership. Staying with the car metaphor, we don’t own the car, we’re leasing it.</p>
+
+<p><em>“Hmmm!”</em> You might argue that you can also lease a conventional car - or a Wordpress instance - <em>“so why do I care?”</em>.</p>
+
+<p>And that’s true. But if you get an electrical car you’ll learn that there isn’t really any service interval on the engine; no plugs, no oil filter, not even any engine oil, there’s no timing belt, no V-belt, no heat exchanger filled with fluid coolant. So even if you managed to get a service deal on your combustion engine, taking care of it all at a fixed price per interval. The fact remains that you wouldn’t have these expenses at all on an electrical car.</p>
+
+<p>It’s the same with a JAM stack compared to a LAMP stack. The number of moving parts are simply brought to an absolute minimum. Simply through use of contemporary technology as opposed to 25 year old technology.</p>
+
+<h3 id="devops-continuous-delivery-and-all-that-jazz">DevOps, Continuous Delivery …and All That Jazz</h3>
+
+<p>Looking at what’s novel and desirable in general in the current world of Software Development the JAM stack offers easy access to it all:</p>
+
+<ul>
+  <li>
+    <p><strong>DevOps</strong> Development and (System) Operations contracted into one word, meaning that there are no silos in team efforts, The infrastructure is also the team’s responsibility Ops are not hidden away in the basements, they are first class team members. Making infrastructure programmable and immutable.</p>
+  </li>
+  <li>
+    <p><strong>Continuous Delivery</strong> as in lean; Build quality in, deliver feature directly to production.</p>
+  </li>
+  <li>
+    <p><strong>Build Pipelines</strong> Implement the product’s definition of done as a pieces of code, and execute it automatically on even the smallest change committed.</p>
+  </li>
+  <li>
+    <p><strong>GitOps</strong> At the foundation of it all is the distributed version control system Git. When changes are added to git and as they are promoted using branches, pull requests and tags it automatically triggers various flows in the pipelines. No one needs to do anything, it’s all automated.</p>
+  </li>
+  <li>
+    <p><strong>Production-like environments</strong> The developers, the testers, the stage users, the end-users should all use similar environments, therefore we need a way to spin up almost infinite numbers of production-like environments. What good is one or two LAMP stacks - when I, and all the automated processes need at least 10 to verify that we’re truly done? Who’s counting anyway? It’s all just <em>services</em> in the cloud.</p>
+  </li>
+  <li>
+    <p><strong>Anything as code</strong> “Anything” in this context being matters like <em>configuration</em>, <em>tests</em>, <em>infrastructure</em>, <em>pipelines</em>  etc. Having it “as code” means that it’s persisted in mergeable files (as opposed to databases or binary files) so that it can be version controlled and immutably executed to yield the same result given the same conditions. Having “anything” as code means that “anything” can by automated.</p>
+  </li>
+</ul>
+
+<p>All of these highly desirable and contemporary principles are available almost out of the box using a JAM stack.</p>
+
+<p><img src="/images/anything/stage.png" alt="Stage" title="Stage" class="img-fluid" /></p>
+
+<h3 id="lets-walk-through-this-webpage-as-an-example">Let’s walk through this webpage as an example</h3>
+
+<p>The entire code base for the website lives inside a git repository, given sufficient access rights all I need to do is to run <code class="highlighter-rouge">git clone</code> on my PC to get all the code and alter it. If I’m not a developer but a content manager, I’ll just browse to the online MarkDown Content management system at <code class="highlighter-rouge">prose.io</code>.</p>
+
+<p>When I’ve made a change I’ll compile and see the result only seconds later in a <code class="highlighter-rouge">docker container</code> - If you are unfamiliar with Docker then think of it as a simple lightweight variant of a virtual machine. Given that I have Docker installed on my machine, in can use it to run <em>any</em> program on my local computer, without actually installing that program. But simply by running it in a <code class="highlighter-rouge">container</code> So I don’t even need to have the JAM stack installed, in order to run the JAM stack (<em>wow!</em>) I can simulate the full fledged behavior of my entire application of web site, without even being connected to the internet (<em>Woooooow!</em>). All this is true regardless if I’m working on Mac,Linux or Windows.</p>
+
+<p>When I like what I see, I <code class="highlighter-rouge">commit</code> to git and <code class="highlighter-rouge">push</code> to GitHub.</p>
+
+<p>I have <code class="highlighter-rouge">Circel CI</code> waiting and watching - if you don’t know Circle CI, think of it as a host of robots sitting on the internet waiting for instructions from me. Circle CI is immediately notified that something has change in the code - and it starts the <em>build pipeline</em> that corresponds to the context (could be <em>development</em>) in git. Circle CI executes the entire Definition of Done, and if - and only if - it is successful it will promote the code in Git (could be from <em>development</em> to <em>master</em> indicating that it’s ready for release on stage).</p>
+
+<p>The automated promotion triggeers a new event, that triggers Circle CI again. This time only to run the next level of Definition of Done, that corresponds to releasing to stage. If all is successful, the web site is automatically deployed to the stage environment. Now it’s live and my stage users can see it.</p>
+
+<p>The stage users is most likely the customer, sneak peaking. If they are satisfied then it is turned into a <code class="highlighter-rouge">release</code> in git, simply marking it with a <a href="https://semver.org" target="_blank"><code class="highlighter-rouge">semantic versioning</code></a> tag. As you have probably guessed by now, this triggers Circle CI again, this time to release it automatically into production. You see what happened? If the code that was submitted to the <code class="highlighter-rouge">development</code> context, prove to meet the various definitions of done on it’s path to produktion, it’s automtically delivered - to production.</p>
+
+<h3 id="can-i-try-it">Can I try it?</h3>
+
+<p>Yes!</p>
+
+<p>I know a small place, the home of the yipees, where they run a campaign: For the price of DKK 4.995 (≈ EUR 670) they offer to set up the whole shebang once and for all, based on Jekyll ( the JAM stack which GitHub created to run their <em>GitHub Pages</em>) and Liquid (The template language developed by Shopify) using a design template of your own choice (there are 100’s to choose from on <a href="https://jekyllthemes.io" target="_blank"><code class="highlighter-rouge">jekyllthemes.io</code></a> and <a href="http://jekyllthemes.org/" target="_blank" data-proofer-ignore=""><code class="highlighter-rouge">jekyllthemes.org</code></a>.)</p>
+
+<p>After that you are ready to add your own content.</p>
+
+<h3 id="examples-of-websites-we-built-using-jam-stacks">Examples of websites we built using JAM stacks:</h3>
+
+<ul>
+  <li><a href="https://www.prolike.io/" target="_blank">prolike.io</a></li>
+  <li><a href="https://www.copenhagencoaching.dk">copenhagencoaching.dk</a></li>
+  <li><a href="https://www.code-conf.com/" target="_blank">code-conf.com</a></li>
+  <li><a href="https://www.praqma.com/" target="_blank">praqma.com</a></li>
+  <li><a href="https://www.dataintensity.com/" target="_blank">dataintensity.com</a></li>
+  <li><a href="https://www.republicdomain.dk/" target="_blank">republicdomain.dk</a></li>
+  <li><a href="https://www.wteam.dk/" target="_blank">wteam.dk</a></li>
+</ul>
+<div class="footnotes">
+  <ol>
+    <li id="fn:stack">
+      <p><em>Stack</em> is IT jargon for the combined set of tools and technologies that are used to run your product - in this case your website. <a href="#fnref:stack" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:forever">
+      <p>MySql, Apache and PHP are all from 1995. Linux itself is from 1991. <a href="#fnref:forever" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </div>
+    </div>
+    <div class="ga-buttons">
+    <p>Sign up to our Profeed and receive news and information about our latest events, or if you can't wait, sign up for our event right away!</p>
+    <a id="ga-mailchimp-from-We're jammin'" class="mailchimp" href="/profeed/" data-proofer-ignore><i class="far fa-envelope"></i>Profeed</a>
+    <a id="ga-eventbrite-from-We're jammin'" class="eventbrite" href="/events/" data-proofer-ignore><i class="far fa-calendar-alt"></i>Events</a>
+</div>
+  </div>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-7 col-12">
+      <h4>Are <a class="yellow-text" href="/infographics/flow/">you</a> our next acquaintance?<br> Talk to us about your <a
+          class="yellow-text" href="mailto:hey@prolike.io?Subject=Hello%20again">next project</a> ideas, or
+        <a class="yellow-text" href="/contact/">swing by</a> for a chat!</h4>
+
+      <div class="row">
+        <div class="col-12 footer-nav">
+
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <a class="footer-nav-link" href="/gigs/" data-proofer-ignore>Gigs</a>
+
+          
+          
+          
+
+          <a class="footer-nav-link" href="/services/" data-proofer-ignore>Services</a>
+
+          
+          
+          
+
+          <a class="footer-nav-link" href="/events/" data-proofer-ignore>Events</a>
+
+          
+          
+          
+          
+          
+          
+          
+
+          <a class="footer-nav-link" href="/stories/" data-proofer-ignore>Stories</a>
+
+          
+          
+          
+
+          <a class="footer-nav-link" href="/contact/" data-proofer-ignore>Contact</a>
+
+          
+          
+          
+          
+          
+          
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 col-12 right">
+
+      <div class="some">
+        <a href="https://twitter.com/prolike_io" target="_blank" data-proofer-ignore><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/prolike_io/" target="_blank" data-proofer-ignore><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://github.com/prolike" target="_blank" data-proofer-ignore><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/company/prolike/" target="_blank" data-proofer-ignore><i
+            class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>
+        <li><a href="https://goo.gl/maps/Esji6p1mx7x" target="_blank">Allerød Stationsvej 4, 3450 Allerød</a></li>
+        <li><a href="https://www.proff.dk/firma/prolike-ivs/aller%C3%B8d/internetdesign-og-programmering/GXD3UTI0C2C/"
+            target="_blank">Vat number: 39464104</a></li>
+        <li><a href="mailto:hey@prolike.io?Subject=Hello%20again" target="_blank">hey@prolike.io</a></li>
+        <li><a href="tel:+45 20 872 530">20 87 25 30</a></li>
+      </span>
+      <p>© 2019 Prolike. All rights reserved.</p>
+    </div>
+  </div>
+
+</footer>
+
+
+
+  
+<script>
+    $('#accordionExample').collapse({
+      toggle: false
+    })
+    </script>
+<!-- Pop-up -->
+
+<script src="/js/pop-up.js"></script>
+
+<!-- Fullpage.js plugin scripts -->
+
+<script src="/js/initialize.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.js" integrity="sha256-+PXlWln5yxt6/owCPwaoGDP2gBEWzBUob73XW329hmY=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/vendors/easings.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/vendors/scrolloverflow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.extensions.min.js"></script> -->
+
+<!-- Animation plugins -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script> 
+<script src="/js/gsap.js"></script>
+
+
+
+<script>$('.navigation-link').click(function() {
+  $('input[name=toggler]').prop('checked', false);
+});</script>
+</body>
+
+</html>

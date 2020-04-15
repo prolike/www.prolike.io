@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!-->
+
+<html lang="en">
+
+<!--<![endif]-->
+
+<head>
+
+  <!-- Google Tag Manager -->
+
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NSLZT72');
+  </script>
+
+  <!-- Jekyll invironment variable -->
+
+  
+
+
+  <!-- Meta -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta itemprop="description" name="description" content="Oh no! Waffle.io is shutting down, so we're going to be moving to ZenHub instead" />
+  <meta name="author" content="Prolike">
+  <meta name="keywords" content="Continuous Delivery, Agile, Docker">
+  <link data-proofer-ignore rel="canonical" href="https://www.prolike.io/stories/zenhub/">
+
+  <!-- Open Graph tags -->
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Switching to Zenhub">
+  <meta data-proofer-ignore property="og:url" content="https://www.prolike.io/stories/zenhub/">
+  <meta data-proofer-ignore property="og:image" content="https://www.prolike.io/images/anything/zenhub.jpg" />
+  <meta property="og:site_name" content="Prolike">
+  <meta property="article:publisher" content="https://www.linkedin.com/company/prolike/" />
+  <meta property="article:author" content="https://www.linkedin.com/company/prolike/" />
+  <meta property="article:published_time" content="2019-03-18 00:00:00 +0100" />
+  <meta property="og:description" content="Oh no! Waffle.io is shutting down, so we're going to be moving to ZenHub instead">
+
+  <!-- Touch icons -->
+
+  <link data-proofer-ignore rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png" />
+  <link data-proofer-ignore rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon-180x180.png" />
+
+  <!-- Twitter Card tags -->
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta data-proofer-ignore name="twitter:image" content="https://www.prolike.io/images/anything/zenhub.jpg">
+  <meta data-proofer-ignore name="twitter:title" content="Switching to Zenhub">
+  <meta data-proofer-ignore name="twitter:description" content="Oh no! Waffle.io is shutting down, so we're going to be moving to ZenHub instead">
+
+  <!-- Page Title -->
+
+  <title>
+    
+    Switching to Zenhub - Stories - Prolike
+    
+  </title>
+
+
+  <!-- Custom fonts for this template -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/dee0mal.css">
+
+  <!-- Favicon -->
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/icons/favicon.ico">
+
+  <!-- Custom styles for this template -->
+
+  <link href="/css/main.css" rel="stylesheet">
+
+  <!-- Fullpage.js scripts -->
+
+  <link rel="stylesheet" href="/css/fullpage.css">
+
+  <!-- Feed -->
+
+  <link rel="alternate" title="Prolike" type="application/json" href="/feed.json" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145588327-1"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145588327-1');
+  </script>
+
+  <!-- Plugin JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<script src="/js/firebaseHandler.js"></script>
+
+<!-- Firebase plugins -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+<script>
+// TODO: Replace the following with your app's Firebase project configuration
+var firebaseConfig = {
+    "apiKey": "AIzaSyAhQJHhUI7Plc7Y_LFXeX8nrjJsFhKlHcw",
+    "projectId": "dillydally-stage",
+    "authDomain": "dillydally-stage.firebaseapp.com",
+    "apiURL": "https://europe-west1-dillydally-stage.cloudfunctions.net/api/",
+    "databaseURL": "https://dillydally-stage.firebaseio.com",
+    "databaseLocation": "eur3 (europe-west)"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+</script>
+
+
+<body id="page-top">
+  
+  <span style="display:none" class="env">prod</span>
+  
+  <!-- Google Tag Manager (noscript) -->
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSLZT72" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- End Google Tag Manager (noscript) -->
+  <nav>
+  <a class="menu-btn" href="/"><img src="/images/logos/prolike-logo.png" alt="Prolike website logo"></a>
+
+  <div class="d-none d-md-block toggler dmenu">
+    <a class="navigation-link" href="/" data-proofer-ignore><p>Home</p></a>
+    
+      
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+          <a href="/gigs/" data-proofer-ignore><p>Gigs</p></a>
+      
+    
+        
+          <a href="/services/" data-proofer-ignore><p>Services</p></a>
+      
+    
+        
+          <a href="/events/" data-proofer-ignore><p>Events</p></a>
+      
+    
+        
+    
+        
+    
+        
+          <a href="/stories/" data-proofer-ignore><p>Stories</p></a>
+      
+    
+        
+          <a href="/contact/" data-proofer-ignore><p>Contact</p></a>
+      
+    
+        
+    
+        
+    
+    
+  </div>
+
+  <div class="d-md-none">
+    <div class="toggler mr-auto"><i class="fas fa-bars d-md-none"></i></div>
+    <div class="menu">
+      <div class="row justify-content-center align-content-center" style="z-index: 10;">
+        <ul>
+          <li><a class="navigation-link" href="/" data-proofer-ignore>
+              <h1>Home</h1>
+            </a></li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li>
+            <h1><a href="/gigs/" data-proofer-ignore>Gigs</a></h1>
+          </li>
+          
+          
+          
+          <li>
+            <h1><a href="/services/" data-proofer-ignore>Services</a></h1>
+          </li>
+          
+          
+          
+          <li>
+            <h1><a href="/events/" data-proofer-ignore>Events</a></h1>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li>
+            <h1><a href="/stories/" data-proofer-ignore>Stories</a></h1>
+          </li>
+          
+          
+          
+          <li>
+            <h1><a href="/contact/" data-proofer-ignore>Contact</a></h1>
+          </li>
+          
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    
+  
+  </div>
+
+  <div class="contact-bar">
+    <a href="tel:+45 20 87 25 30"><i class="fas fa-phone"></i>  +45 20 87 25 30</a>
+    <a href="mailto:hey@prolike.io"><i class="far fa-envelope"></i> hey@prolike.io</a>
+
+  </div>
+
+
+</nav>
+
+<script>
+  $(function () {
+    var box = $('.menu');
+    var button = $('.toggler');
+    button.on('click', function () {
+      box.toggleClass('active');
+    });
+  });
+</script>
+
+
+
+
+  <div class="article">
+    <div class="row">
+      <div class="col-12">
+        <span>
+          <p>18. March, 2019</p>
+          <h1>Switching to Zenhub</h2>
+            <p>By <a href="https://github.com/lakruzz">Lars Kruse</a></p>
+        </span>
+        <div class="header-image"><img src="/images/anything/zenhub.jpg" alt="Switching to Zenhub"></div>
+        <p class="kicker">Waffle.io is shutting down, we’re moving to ZenHub. Zenhub has the advantage that’s is a GitHub extension, so from a usability point of view it’s much better integrated in the user interface.</p>
+
+<h3 id="get-started">Get Started</h3>
+
+<ol>
+  <li>Install the <a href="https://www.zenhub.com/extension" target="_blank">Browser extension for ZenHub</a> (Availabel for Chrome and Firefox).</li>
+  <li>Browse to one of your repositories (e.g <a href="https://github.com/prolike/prolike.io#zenhub" target="_blank">prolike/prolike.io#zenhub</a>)</li>
+  <li>Autorize the ZenHub app for both public and private repos.</li>
+</ol>
+
+<h3 id="first-time-use">First time use</h3>
+
+<p>Quite similar to <strong>Waffle.io</strong></p>
+
+<ol>
+  <li><strong>Create a workspace name</strong> - This is actually an improvement to Waffle.io where one repo would be the <em>top-level</em> and the others would be <em>dragged</em> in. In ZenHub they are not parent-child relations but rather siblings in a joint workspace.</li>
+  <li><strong>Add a description</strong> - Also an extra feature compared to Waffle.io</li>
+  <li><strong>Connect repos</strong> - pull in the ones that belongs to the workspace</li>
+</ol>
+
+<h3 id="define-the-columns">Define the columns</h3>
+
+<p>ZenHub referes to the columns in the Kanban as pipelines. The predefined pipelines are</p>
+
+<p><code class="highlighter-rouge">New issues  -&gt; Icebox -&gt; Backlog  -&gt; In progress -&gt; Review/QA -&gt; Done -&gt; Closed.</code></p>
+
+<p>Of all these, <code class="highlighter-rouge">Closed</code> is the only one that is required (default available). The rationale behind this flow is described here at <a href="https://help.zenhub.com/support/home">ZenHub’s help page</a>.</p>
+
+<p>In Waffle.io the card’s journey through the columns was defined by labels. ZenHub uses it’s own internally maintained metadata. So to model the Phlow in ZenHub you don’t need to define any labels, just simply rearrange and rename the columns (pipelines) to read.</p>
+
+<p><code class="highlighter-rouge">New issues -&gt; Backlog -&gt; Up next -&gt; To do -&gt; In progress -&gt; Closed</code></p>
+
+<p>The <em>New issues</em> pipeline was not part of the line up in Waffle.io, but it’s definitely an improvement, it makes the project’s in box is visible, so we’ll keep it and embrace it.</p>
+
+<h3 id="priorities">Priorities</h3>
+
+<p>ZenHub doesn’t define it’s own priorities, so we will just continue to use our own labels for this.</p>
+
+<h3 id="estimates---t-shirt-sizes-becomes-story-points">Estimates - T-shirt sizes becomes story points</h3>
+
+<p>ZenHub has it’s own built-in approach to estimates, it’s based on complexity or story points and takes offset in the fibbonachi numbers 1 - 2 -3 - 5 - 8 -13 -21 and then ends with 40.</p>
+
+<p>Waffle.io also had it’s own internally implemented estimates, but we chose not to use them, because the we’ren’t availabel outside the context of Waffle.io. In ZenHub it’s acceptable since we can actually access this data on an <a href="https://github.com/ZenHubIO/API">API</a> and we even have access to a few CLI tools <a href="https://github.com/cou929/zhb">zhb</a>, <a href="https://github.com/eltorocorp/zencli">zencli</a> and maybe the most promising <a href="https://github.com/hiredgun/zenhub-cli">zenhub-cli</a> which means that we can incoporate this in our automated Phlow.</p>
+
+<p>And since ZenHub is not hosted on it’s own URL like Waffle.io was, but instead it’s made availabel through an extension of the GUI on GitHub it feels intuitive. We’ll go with this.</p>
+
+<p>We will translate the new complextity to ideal-working-hours. (E.g. how “long time would it take, if we gave the issue to a developer who had all the necessary competences, and could work the issue without interruptions until done”).</p>
+
+<p>So essentially we will stop using our own T-shirt size labels and use the built in story points instead, translating the semantics as follows:</p>
+
+<p><strong>Small</strong>: 1-2 story points.
+<strong>Medium</strong>: 3-5 story points.
+<strong>Large</strong>: 8 story points.
+<strong>Too large</strong>: 13 or higher.</p>
+
+<h3 id="briefings-becomes-epcis">Briefings becomes Epcis</h3>
+
+<p>ZenHub has built in support for Epics, which essentially are Container issues. It seems to work quite well, and comepletely replases our need for “Briefings”.</p>
+
+<h3 id="dependencies-release-reporting-etc">Dependencies, release, reporting etc</h3>
+
+<p>There are actually a few more features such as blocking dependencies and modelling releases that seems useful, and ZenHub also encourages the use of Milestones, since they play a central role in the quite useful predefined reports. We can examine this further down the process…</p>
+
+<h3 id="bulk-upgrades-manual-work-ahead">Bulk upgrades (MANUAL work ahead!)</h3>
+
+<p>We could probably build a small too to make the transition from Waffle.io to ZenHub here’s the <strong>MANUAL</strong> process I’ve been using for the few projects I’ve migrated so far. It starts, after you have defined the workspace collection and the pipelines…</p>
+
+<p><strong>Before we start…</strong> a word on selction and bulk actions: You can click one of the issues on the icon of the assignee, this will enter into  selection mode, click on any other issue to add to selections. While in selection mode, an array of bulk actions becomes available as push buttons over the board. Do Your Thing.</p>
+
+<p>The process is really a repetition over almost the same cycle:</p>
+
+<h3 id="pipelines-columns">Pipelines (columns)</h3>
+
+<ul>
+  <li>Use a filter to see the issues with <code class="highlighter-rouge">status - *</code>  one at a time</li>
+  <li>Select all the issues and do a bulk action to move the to the corresponding pipeline, or simply drag them there one by one.</li>
+  <li>Clear the filter and start over</li>
+</ul>
+
+<p>Consider deleting the status labels  previously used in the Phlow - to force yourself out of Waffle today - rather than in two months.</p>
+
+<h3 id="estimates">Estimates</h3>
+
+<ul>
+  <li>Use a filter to see the issues with <code class="highlighter-rouge">size - *</code> one at a time</li>
+  <li>Select all the issues and do a bulk action to set the corresponding story point estimate.</li>
+  <li>Clear the filter and start over</li>
+</ul>
+
+<h3 id="move-all-from-new-issues-to-backlog">Move all from “New Issues” to “Backlog”</h3>
+
+<p>Since the use of <em>New Issues</em> is new to us, but default to ZenHub,  we need to move all issues from <em>New Issues</em> to <em>Backlog</em></p>
+
+<h3 id="briefings">Briefings</h3>
+
+<ul>
+  <li>Use a filter to see the issues with briefing one at a time</li>
+  <li>In the right menu select the <code class="highlighter-rouge">Epic</code> item and then <code class="highlighter-rouge">convert to Epic</code></li>
+  <li>Make a note of each isses that is mentioned throughoput the log of the Briefing issues and for each of them
+    <ul>
+      <li>Open the issue</li>
+      <li>Use the Epic menu item to add the individuial issue to the epic.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><em>Rest In Peace Waffle</em></p>
+
+<p><em>Lars</em></p>
+
+      </div>
+    </div>
+    <div class="ga-buttons">
+    <p>Sign up to our Profeed and receive news and information about our latest events, or if you can't wait, sign up for our event right away!</p>
+    <a id="ga-mailchimp-from-Switching to Zenhub" class="mailchimp" href="/profeed/" data-proofer-ignore><i class="far fa-envelope"></i>Profeed</a>
+    <a id="ga-eventbrite-from-Switching to Zenhub" class="eventbrite" href="/events/" data-proofer-ignore><i class="far fa-calendar-alt"></i>Events</a>
+</div>
+  </div>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-7 col-12">
+      <h4>Are <a class="yellow-text" href="/infographics/flow/">you</a> our next acquaintance?<br> Talk to us about your <a
+          class="yellow-text" href="mailto:hey@prolike.io?Subject=Hello%20again">next project</a> ideas, or
+        <a class="yellow-text" href="/contact/">swing by</a> for a chat!</h4>
+
+      <div class="row">
+        <div class="col-12 footer-nav">
+
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <a class="footer-nav-link" href="/gigs/" data-proofer-ignore>Gigs</a>
+
+          
+          
+          
+
+          <a class="footer-nav-link" href="/services/" data-proofer-ignore>Services</a>
+
+          
+          
+          
+
+          <a class="footer-nav-link" href="/events/" data-proofer-ignore>Events</a>
+
+          
+          
+          
+          
+          
+          
+          
+
+          <a class="footer-nav-link" href="/stories/" data-proofer-ignore>Stories</a>
+
+          
+          
+          
+
+          <a class="footer-nav-link" href="/contact/" data-proofer-ignore>Contact</a>
+
+          
+          
+          
+          
+          
+          
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 col-12 right">
+
+      <div class="some">
+        <a href="https://twitter.com/prolike_io" target="_blank" data-proofer-ignore><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/prolike_io/" target="_blank" data-proofer-ignore><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://github.com/prolike" target="_blank" data-proofer-ignore><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/company/prolike/" target="_blank" data-proofer-ignore><i
+            class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>
+        <li><a href="https://goo.gl/maps/Esji6p1mx7x" target="_blank">Allerød Stationsvej 4, 3450 Allerød</a></li>
+        <li><a href="https://www.proff.dk/firma/prolike-ivs/aller%C3%B8d/internetdesign-og-programmering/GXD3UTI0C2C/"
+            target="_blank">Vat number: 39464104</a></li>
+        <li><a href="mailto:hey@prolike.io?Subject=Hello%20again" target="_blank">hey@prolike.io</a></li>
+        <li><a href="tel:+45 20 872 530">20 87 25 30</a></li>
+      </span>
+      <p>© 2019 Prolike. All rights reserved.</p>
+    </div>
+  </div>
+
+</footer>
+
+
+
+  
+<script>
+    $('#accordionExample').collapse({
+      toggle: false
+    })
+    </script>
+<!-- Pop-up -->
+
+<script src="/js/pop-up.js"></script>
+
+<!-- Fullpage.js plugin scripts -->
+
+<script src="/js/initialize.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.js" integrity="sha256-+PXlWln5yxt6/owCPwaoGDP2gBEWzBUob73XW329hmY=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/vendors/easings.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/vendors/scrolloverflow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.extensions.min.js"></script> -->
+
+<!-- Animation plugins -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script> 
+<script src="/js/gsap.js"></script>
+
+
+
+<script>$('.navigation-link').click(function() {
+  $('input[name=toggler]').prop('checked', false);
+});</script>
+</body>
+
+</html>
